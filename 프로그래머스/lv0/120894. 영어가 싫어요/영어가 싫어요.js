@@ -6,5 +6,5 @@ function solution(numbers) {
        numbers = numbers.replaceAll(numbersArray[i], i);
     }
     
-    return parseInt(numbers);
+    return Number(numbers);
 }
