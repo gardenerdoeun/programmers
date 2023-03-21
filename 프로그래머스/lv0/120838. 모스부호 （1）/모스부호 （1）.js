@@ -8,9 +8,10 @@ function solution(letter) {
     '-.--':'y','--..':'z'
     };
     letter = letter.split(' ');
-    for(let i = 0; i < letter.length; i++){
-        answer += morse[letter[i]];
-            //Object.keys(letter[i])
+    for (const code in letter){
+        console.log(code);
     }
+         
+    
     return answer;
 }
