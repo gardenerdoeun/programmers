@@ -1,16 +1,12 @@
 function solution(my_string) {
-    let result = 0;
+    var answer = 0;
+    let arr = [];
     
-    for(let i = 0; i < my_string.length; i++){
-        let tmp = 0;
-        while(!Number.isNaN(Number(my_string[i]))){
-            tmp += my_string[i];
-            // console.log(tmp);
-            i++;
-        }
-        result += Number(tmp);
-        console.log(result);
+    my_string = my_string.replace(/[^0-9]/g, ' ');
+    arr = my_string.split(' ');
+
+    for(let i = 0; i< arr.length; i++){
+        answer += Number(arr[i]);
     }
-    
-    return result;
+    return answer;
 }
